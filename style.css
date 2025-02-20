@@ -197,7 +197,7 @@ footer {
     }
 
     .banner img {
-        max-height: 100px;
+        max-height: 450px;
         display: block;
         margin: auto;
         border-radius: 5px;
@@ -213,13 +213,19 @@ footer {
     }
 
     .banner h2 {
-        font-size: 0.8em;
+        margin: 10px;
+        font-size: 1.5em;
+    }
+
+    .banners {
+        display: block;
     }
 
     #btn-comprar {
         display: block;
-        margin-top: 10px;
-        padding: 2px;
+        align-items: center;
+        margin: auto;
+        padding: 10px;
         background-color: #fff;
         border:1px solid black;
     }
@@ -244,10 +250,23 @@ footer {
     }
 
     .banner img {
-        max-height: 200px;
+        max-height: 500px;
         display: block;
         margin: auto;
         border-radius: 5px;
+    }
+
+    .banners {
+        display: grid;
+        place-content: center; /*centraliza os itens*/
+        grid-template-columns: repeat(2, 45%);
+        column-gap: 2%; /*espaco na largura*/
+        row-gap: 3%; /* espaco na altura */
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+        margin: 16px;
     }
 
     #p-desktop {
@@ -255,7 +274,14 @@ footer {
     }
 
     #btn-comprar {
-        display: block;
-        margin-left: 48px;
+        display: flex;
+        align-items: center;
+        margin: auto;
     }
+
+    footer {
+        margin-top: 50px;
+        font-size: 1.0em;
+    }
+
 }
