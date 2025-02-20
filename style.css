@@ -156,13 +156,14 @@ footer {
 
 @media screen and (max-width: 767px ) {
 
+
     form input {
         width: 90%;
             padding:5px 10px 6px 16px;
     }
 
     form button {
-        margin: 5px 5px 0px 70px ;
+        margin: 5px 5px 0px 65px ;
         padding: 4px;
     }
 
@@ -188,7 +189,8 @@ footer {
     
     .sobre-loja img {
         max-height: 200px;
-        margin-right: 20px;
+        width: 96%;
+        margin-bottom: 30px;
         border-radius: 5px;
     }
 
