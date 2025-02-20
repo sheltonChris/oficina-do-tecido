@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Serif', serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 116, 137);
+    padding: 20px;
+}
+
+header { /*cabecalho estatico*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header img{
+    height: 55px;
+
+}
+
+.menu {
+    width: 32px;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+
+.menu span {
+    height: 2px;
+    width: 100%;
+    background-color: #4f4e4e;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form input {
+    padding: 8px 120px 8px 15px;
+}
+
+form button {
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+nav {
+    display: none;
+    padding: 8px 0;
+    background-color: rgb(243, 116, 137);
+}
+
+nav li{
+    display: inline;
+    list-style: none;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 99%;
+}
+
+.destaque {
+    margin-bottom: 50px;
+}
+
+.destaque .sobre-loja {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+.sobre h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.sobre-loja img {
+    max-height: 400px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.banner img {
+    max-height: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.conteudo > h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.banners {
+    display: grid;
+    place-content: center; /*centraliza os itens*/
+    grid-template-columns: repeat(3, 22.9%);
+    column-gap: 2%; /*espaco na largura*/
+    row-gap: 3%; /* espaco na altura */
+}
+
+.banner {
+    padding: 20px 3px;
+    text-align: center;
+}
+
+.banner a {
+    text-decoration: none;
+    color: black;
+}
+
+#btn-comprar {
+    display: none;
+    margin-top: 10px;
+    background-color: #fff;
+    border:1px solid black;
+    padding: 8px;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(243, 116, 137);
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 767px ) {
+
+    form input {
+        width: 90%;
+    }
+
+    form button {
+        margin: 5px 5px 0px 55px ;
+        padding: 4px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        padding: 8px 0;
+        background-color: rgb(243, 116, 137);
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .destaque .sobre-loja {
+        margin-left: 20px;
+        display: block;
+        font-size: 10px
+    }
+    
+    .sobre-loja img {
+        max-height: 200px;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
+
+    .destaque .sobre-loja {
+        font-size: 1.0em;
+    }
+
+    .banner img {
+        max-height: 100px;
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+    }
+
+    .banner p {
+        margin-top: 6px;
+        font-size: 0.7em;
+    }
+
+    #p-desktop {
+        display: none;
+    }
+
+    .banner h2 {
+        font-size: 0.8em;
+    }
+
+    #btn-comprar {
+        display: block;
+        margin-top: 10px;
+        padding: 2px;
+        background-color: #fff;
+        border:1px solid black;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .conteudo {
+        display: block;
+    }
+
+    .destaque .sobre-loja {
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1em;
+    }
+
+    .sobre-loja img {
+        max-width: 60%;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
+
+    .banner img {
+        max-height: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+    }
+
+    #p-desktop {
+        display: none;
+    }
+
+    #btn-comprar {
+        display: block;
+        margin-left: 48px;
+    }
+}
