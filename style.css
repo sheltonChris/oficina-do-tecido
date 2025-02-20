@@ -158,6 +158,7 @@ footer {
 
     form input {
         width: 90%;
+            padding:5px 10px 6px 16px;
     }
 
     form button {
